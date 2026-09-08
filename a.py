@@ -34,7 +34,9 @@ class ATLNodeBase(AgentBase):
         self.execution_context: Dict[str, Any] = {}
         self._future: Optional[Future] = None
         self._thread_id: Optional[str] = None
-        
+    
+
+
     def _get_step_id(self, func_name: str) -> str:
         """
         Get the step ID for a given function name.
