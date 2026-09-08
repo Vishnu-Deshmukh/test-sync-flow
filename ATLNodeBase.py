@@ -62,6 +62,9 @@ class ATLNodeBase(AgentBase):
 
 
         
+
+
+        
         message_map = {
             "setup": AnalyseStepMessages.SETUP_START,
             "run_in_thread": AnalyseStepMessages.RUN_START, 
