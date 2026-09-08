@@ -22,6 +22,9 @@ class ATLNodeBase(AgentBase):
     Abstract base class for ATL Node that follows a multistep orchestration pattern.
     Inherits from AgentBase and implements template-based processing workflow.
     """
+
+
+    
     TRACE_CLASS = ATLNodeBaseTraceBase
     _executor = ThreadPoolExecutor(max_workers=10)  # shared pool
 
