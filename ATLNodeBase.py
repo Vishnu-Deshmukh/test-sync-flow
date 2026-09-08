@@ -24,7 +24,7 @@ class ATLNodeBase(AgentBase):
     """
 
 
-    
+
     TRACE_CLASS = ATLNodeBaseTraceBase
     _executor = ThreadPoolExecutor(max_workers=10)  # shared pool
 
@@ -59,6 +59,9 @@ class ATLNodeBase(AgentBase):
         Returns:
             str: The formatted start message
         """
+
+
+        
         message_map = {
             "setup": AnalyseStepMessages.SETUP_START,
             "run_in_thread": AnalyseStepMessages.RUN_START, 
