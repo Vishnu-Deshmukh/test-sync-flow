@@ -27,12 +27,6 @@ class ATLNodeBase(AgentBase):
 
 
 
-
-
-
-
-
-
     TRACE_CLASS = ATLNodeBaseTraceBase
     _executor = ThreadPoolExecutor(max_workers=10)  # shared pool
 
