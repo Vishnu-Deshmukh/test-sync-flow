@@ -59,6 +59,8 @@ class ATLNodeBase(AgentBase):
         Returns:
             str: The formatted start message
         """
+
+        
         
         message_map = {
             "setup": AnalyseStepMessages.SETUP_START,
