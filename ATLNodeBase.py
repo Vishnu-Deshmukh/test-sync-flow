@@ -29,8 +29,6 @@ class ATLNodeBase(AgentBase):
 
     TRACE_CLASS = ATLNodeBaseTraceBase
     _executor = ThreadPoolExecutor(max_workers=10)  # shared pool
-
-
     def __init__(self):
         super().__init__()
         self.execution_context: Dict[str, Any] = {}
