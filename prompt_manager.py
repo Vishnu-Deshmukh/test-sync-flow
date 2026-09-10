@@ -21,6 +21,7 @@ class PromptManager:
             self.collection = self.db.get_collection("prompt_templates")
             self.cache_enabled = cache_enabled
             self.initialized = True
+            self.new = False
 
     def get_prompt(self, prompt_name: str, **kwargs: Any) -> str:
         """Fetches string prompt from prompt_templates collection."""
