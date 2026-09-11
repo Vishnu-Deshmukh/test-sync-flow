@@ -62,10 +62,6 @@ class ATLNodeBase(AgentBase):
         return step_map.get(func_name, "")
 
 
-
-
-
-
     def _get_start_message(self, func_name: str, agent_name: str) -> str:
         """
         Get the start message for a given function name and agent name.
