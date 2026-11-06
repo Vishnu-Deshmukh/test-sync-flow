@@ -80,7 +80,7 @@ class ATLNodeBase(AgentBase):
             "run": AnalyseStepMessages.RUN_START
         }
 
-        
+
         
         try : 
             message_enum = message_map.get(func_name)
@@ -93,6 +93,7 @@ class ATLNodeBase(AgentBase):
                         # Test JSON serialization
                         json.dumps(message_text)
                         return message_text
+                    
                     else:
                         logging.warning(f"get_message_text returned invalid result: {type(message_text)} - {repr(message_text)}")
                         
