@@ -83,7 +83,6 @@ class ATLNodeBase(AgentBase):
 
         
 
-        
         try : 
             message_enum = message_map.get(func_name)
             if message_enum:
