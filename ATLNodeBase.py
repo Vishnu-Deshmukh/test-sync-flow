@@ -79,9 +79,6 @@ class ATLNodeBase(AgentBase):
             "run_in_thread": AnalyseStepMessages.RUN_START, 
             "run": AnalyseStepMessages.RUN_START
         }
-
-        
-
         
         try : 
             message_enum = message_map.get(func_name)
