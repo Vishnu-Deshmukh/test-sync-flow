@@ -132,6 +132,7 @@ class ATLNodeBase(AgentBase):
         """
         self._thread_id = str(uuid.uuid4())
 
+
         def _safe_run():
             try:
                 return self.run(execution_context)
