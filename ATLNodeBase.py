@@ -142,12 +142,6 @@ class ATLNodeBase(AgentBase):
         self._future = self._executor.submit(_safe_run)
 
 
-
-
-
-
-
-
         return {
             "status": "RUNNING",
             "thread_id": self._thread_id,
