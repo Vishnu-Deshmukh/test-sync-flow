@@ -14,6 +14,7 @@ class PromptManager:
         if not cls._instance:
             cls._instance = super(PromptManager, cls).__new__(cls)
         return cls._instance
+    
 
     def __init__(self, db_client=None, cache_enabled: bool = True):
         if not hasattr(self, "initialized"):
