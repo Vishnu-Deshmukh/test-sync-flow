@@ -21,6 +21,8 @@ class ATLNodeBaseTraceBase(AgentsTraceBase):
     pass
 
 
+
+
 class ATLNodeBase(AgentBase):
     """
     Abstract base class for ATL Node that follows a multistep orchestration pattern.
