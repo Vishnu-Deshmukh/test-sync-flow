@@ -27,10 +27,6 @@ class ATLNodeBase(AgentBase):
     Inherits from AgentBase and implements template-based processing workflow.
     """
 
-
-
-
-
     TRACE_CLASS = ATLNodeBaseTraceBase
     _executor = ThreadPoolExecutor(max_workers=10)  # shared pool
     def __init__(self):
