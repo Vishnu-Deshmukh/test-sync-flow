@@ -66,6 +66,7 @@ class PromptManager:
 
         return schema_dict if isinstance(schema_dict, dict) else {}
 
+
     def _get_raw_item(self, item_name: str) -> Optional[Union[str, Dict[str, Any]]]:
         if self.cache_enabled and item_name in self._cache:
             return self._cache[item_name]
